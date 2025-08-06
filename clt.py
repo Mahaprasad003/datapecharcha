@@ -12,8 +12,6 @@ def central_limit_theorem_app():
     # --- App Title and Description ---
     st.title("Central Limit Theorem Demonstration")
     st.markdown("""
-    The **Central Limit Theorem (CLT)** is a cornerstone of statistics and probability theory. In simple terms, it states that if you have a population with any kind of distribution (be it uniform, skewed, or irregular), and you take sufficiently large random samples from this population with replacement, then the distribution of the **sample means** will be approximately normally distributed (i.e., it will look like a bell curve).
-
     **How to use this app:**
     1.  **Choose a Population Distribution:** On the left, select a distribution for the parent population. Notice that some, like 'Exponential', are not bell-shaped at all.
     2.  **Set Parameters:** Adjust the parameters for the chosen distribution. Explanations for each parameter are provided below the sliders.
@@ -150,9 +148,7 @@ def central_limit_theorem_app():
     st.markdown("---")
     st.header("What's Happening Here? (The Magic of CLT)")
     st.markdown(f"""
-    Even if the **Population Distribution** on the left is lopsided (like the Exponential) or flat (like the Uniform), the **Distribution of Sample Means** on the right looks much more like a symmetric, bell-shaped normal distribution. 
-    
-    This is the Central Limit Theorem in action! As you increase the **Sample Size (n)**, this approximation to a normal distribution becomes even better. This is incredibly powerful because it allows us to make inferences about a population using the properties of the normal distribution, even if we don't know the population's actual distribution shape.
+    Even if the population distribution is skewed (e.g., exponential) or flat (e.g., uniform), the distribution of sample means becomes approximately normal as sample size increases. This is the Central Limit Theorem: regardless of the population's shape, the sampling distribution of the mean approaches a normal, symmetric, bell-shaped distribution
     """)
 
     st.markdown("---")
